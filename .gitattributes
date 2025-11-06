@@ -1,0 +1,2 @@
+*.pt filter=lfs diff=lfs merge=lfs -text
+sms_spam_indobert_model/* filter=lfs diff=lfs merge=lfs -text
