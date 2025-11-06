@@ -310,15 +310,7 @@ Model cenderung lebih "hati-hati" dengan memprediksi beberapa Ham sebagai Spam (
 - **IndoBERT Model:** [https://huggingface.co/indobenchmark/indobert-base-p1](https://huggingface.co/indobenchmark/indobert-base-p1)
 - **BERT Paper:** [Attention is All You Need](https://arxiv.org/abs/1706.03762)
 
-## 👨‍💻 Author
 
-**NLP Project - Tubes Semester 7**
-
-## 📝 License
-
-This project is for educational purposes.
-
----
 
 **Status:** ✅ **Model Trained & Evaluated Successfully**  
 **Last Updated:** November 6, 2025  
