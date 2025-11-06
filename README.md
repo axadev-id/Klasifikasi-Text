@@ -1,5 +1,20 @@
 # Klasifikasi Pesan Spam pada SMS Berbahasa Indonesia Menggunakan IndoBERT
 
+Dikerjakan oleh Tim NLP kelompok 6 - Tubes
+Nama Anggota:
+### 👥 Anggota Tim — NLP Kelompok 6
+
+| No | Nama | NIM |
+|---:|---|---|
+| 1 | **Fajrul Ramadhana Aqsa** | `122140118` |
+| 2 | **Nayla Fayyiza Khairina** | `122140033` |
+| 3 | **Nasywa Talitha Heryanna** | `122140046` |
+| 4 | **Febriani Nawang Wulan Sianipar** | `122140071` |
+| 5 | **Zefanya Danovanta Tarigan** | `122140101` |
+| 6 | **Giulia Puspo Negoro** | `122140084` |
+
+_Kelompok 6_
+
 ## 📋 Deskripsi Proyek
 
 Proyek ini mengimplementasikan sistem klasifikasi otomatis untuk mendeteksi pesan spam pada SMS berbahasa Indonesia menggunakan model deep learning **IndoBERT** (Indonesian BERT). Model ini memanfaatkan transfer learning dari pre-trained BERT yang telah dilatih khusus untuk bahasa Indonesia, memberikan pemahaman konteks dan semantik yang lebih baik dibandingkan metode tradisional.
