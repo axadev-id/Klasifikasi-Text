@@ -12,6 +12,7 @@ Nama Anggota:
 | 4 | **Febriani Nawang Wulan Sianipar** | `122140071` |
 | 5 | **Zefanya Danovanta Tarigan** | `122140101` |
 | 6 | **Giulia Puspo Negoro** | `122140084` |
+| 7 | **Ihya Razky Hidayat** | `122140167` |
 
 _Kelompok 6_
 
