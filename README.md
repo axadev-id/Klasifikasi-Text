@@ -170,10 +170,10 @@ Actual Spam            4             32
 - **Spam:** 88.89% (32/36)
 
 ### Interpretasi Hasil:
-- ✅ **Akurasi sangat tinggi (97.67%)** - Model dapat membedakan Ham dan Spam dengan sangat baik
-- ✅ **Recall 100%** - Model berhasil mendeteksi SEMUA spam (tidak ada spam yang lolos)
-- ✅ **Precision 95.56%** - Sedikit false positive (4 Ham diprediksi sebagai Spam)
-- ✅ **F1-Score 97.73%** - Balance yang sangat baik antara precision dan recall
+- **Akurasi mencapai 97.67%**, model dapat membedakan Ham dan Spam 
+- **Recall 100%**, model berhasil mendeteksi SEMUA spam pada dataset
+- **Precision 95.56%**, sedikit false positive (4 Ham diprediksi sebagai Spam)
+- **F1-Score 97.73%** 
 
 ## 🧪 Contoh Prediksi
 
