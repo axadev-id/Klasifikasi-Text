@@ -155,8 +155,8 @@ LEARNING_RATE = 2e-5    # Learning rate optimizer
 ### Confusion Matrix:
 ```
               Predicted Ham  Predicted Spam
-Actual Ham            82              0
-Actual Spam            4             86
+Actual Ham            82              4  
+Actual Spam            0             86
 ```
 
 ### Per-Class Accuracy:
