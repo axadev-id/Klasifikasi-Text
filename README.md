@@ -36,7 +36,7 @@ Proyek ini mengimplementasikan sistem klasifikasi otomatis untuk mendeteksi pesa
 - **Label 1:** 335 pesan Spam (29.30%) - Penawaran komersial
 - **Label 2:** 239 pesan Spam (20.92%) - Promo operator
 
-### Distribusi Setelah Mapping:
+### Distribusi Dataset Setelah Mapping:
 - **Ham (0):** 569 pesan (49.78%)
 - **Spam (1):** 574 pesan (50.22%)
 
@@ -89,50 +89,43 @@ LEARNING_RATE = 2e-5    # Learning rate optimizer
      - Remove URLs
      - Remove extra whitespace
    - Analisis panjang teks dan jumlah kata
+    - **Tokenization:**
+    - Load pre-trained tokenizer dari Hugging Face
+    - Test tokenization pada sample text
+    - Konfigurasi max length dan padding
 
-### 4. **Load IndoBERT Tokenizer**
-   - Load pre-trained tokenizer dari Hugging Face
-   - Test tokenization pada sample text
-   - Konfigurasi max length dan padding
-
-### 5. **Prepare PyTorch Dataset**
+### 4. **Pembagian Data**
    - Custom `SMSDataset` class untuk handle tokenization
    - Split data: 70% train, 15% validation, 15% test (stratified)
    - Create DataLoader untuk batch processing
 
-### 6. **Initialize Model**
+### 5. **Pelatihan Model**
    - Load pre-trained IndoBERT untuk sequence classification
    - Konfigurasi 2 label output (binary classification)
    - Transfer model ke device (GPU/CPU)
-
-### 7. **Setup Training Components**
    - Initialize AdamW optimizer
    - Setup learning rate scheduler dengan linear decay
    - Define training dan evaluation functions
-
-### 8. **Training Model**
+- Training Model -
    - Training loop selama 3 epochs
    - Monitoring train & validation metrics per epoch
    - Save best model berdasarkan validation accuracy
 
-### 9. **Evaluasi Model**
+### 6. **Evaluasi Model**
    - Load best model
    - Evaluate pada test set
    - Generate classification report
    - Create confusion matrix visualization
-
-### 10. **Prediction pada Data Baru**
+- Prediction pada Data Baru
    - Implementasi fungsi `predict_sms()` untuk inferensi
    - Testing dengan SMS baru
    - Output confidence scores dan probabilitas
-
-### 11. **Save Results**
+- Save Results -
    - Save model dan tokenizer ke directory
    - Export training history (CSV)
    - Export test results dan predictions
    - Save metrics summary
-
-### 12. **Analisis Error**
+- Analisis Error -
    - Identifikasi misclassified messages
    - Analisis pola kesalahan model
    - Generate error report
@@ -143,11 +136,12 @@ LEARNING_RATE = 2e-5    # Learning rate optimizer
 
 | Epoch | Train Acc | Train Loss | Val Acc | Val Loss |
 |-------|-----------|------------|---------|----------|
-| 1     | 95.00%    | 0.1918     | 98.25%  | 0.0587   |
-| 2     | 98.63%    | 0.0626     | 98.25%  | 0.0615   |
-| 3     | 99.25%    | 0.0222     | 98.25%  | 0.0612   |
+| 1     | 94.63%    | 0.1780     | 98.83%  | 0.0547   |
+| 2     | 97.75%    | 0.0747     | 98.83%  | 0.0512   |
+| 3     | 99.25%    | 0.0271     | 98.25%  | 0.0439   |
 
-**Best Validation Accuracy:** 98.25%
+
+**Best Validation Accuracy:** 98.83%
 
 ### Test Set Performance:
 
@@ -161,8 +155,8 @@ LEARNING_RATE = 2e-5    # Learning rate optimizer
 ### Confusion Matrix:
 ```
               Predicted Ham  Predicted Spam
-Actual Ham           136              0
-Actual Spam            4             32
+Actual Ham            82              0
+Actual Spam            4             86
 ```
 
 ### Per-Class Accuracy:
